@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: payflow
+
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://127.0.0.1:5432/payflow_db}
+    username: ${SPRING_DATASOURCE_USERNAME:payflow_app}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    hikari:
+      maximum-pool-size: 5
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+  flyway:
+    enabled: true
+
+server:
+
+  servlet:
+    session:
+      cookie:
+        http-only: true
+        secure: true
+        same-site: lax
+  address: 127.0.0.1
+  port: ${SERVER_PORT:8080}

@@ -1,0 +1,49 @@
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+# Node / React
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+dist/
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*credentials*
+*secret*
+application-local.yml
+application-local.yaml
+*.log
+logs/
+*.pid
+# IDE and operating system
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+# Terraform state
+.terraform/
+*.tfstate
+*.tfstate*
+*.tfplan
+crash.log
+# Database backups
+*.sql
+*.dump
+*.bak
+*.backup
+*.tar.gz
+# Test output
+coverage/
+.nyc_output/
